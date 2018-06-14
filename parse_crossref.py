@@ -205,24 +205,26 @@ def add_dois_from_file(db_conn, doi_file):
 
     print(bad_dois)
 
-last = ''
 
-doi_retreiver = DOIRetreiver()
+if __name__ == "__main__":
+	last = ''
 
-bad_dois = []
-db_file = 'test.db'
-conn = sqlite3.connect(db_file)
+	doi_retreiver = DOIRetreiver()
+
+	bad_dois = []
+	db_file = 'test.db'
+	conn = sqlite3.connect(db_file)
 
 
-create_database = False
-if create_database:
-    create_db(conn)
-    add_dois_from_file(conn, 'doi_files/dois.dat')
+	create_database = False
+	if create_database:
+		create_db(conn)
+		add_dois_from_file(conn, 'doi_files/dois.dat')
 
-for journal, issn in retreive_all_journals(conn):
-    print(journal, issn)
-    if journal[0] >= 'P':
-        add_all_journal_articles(conn, issn, '2017-01-01', '2018-05-31')
+	for journal, issn in retreive_all_journals(conn):
+		print(journal, issn)
+		if journal[0] >= 'P':
+			add_all_journal_articles(conn, issn, '2017-01-01', '2018-05-31')
 
 
 
