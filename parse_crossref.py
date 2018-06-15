@@ -89,7 +89,7 @@ def add_to_db(db_conn, journal_record, isVoth=False):
         page = ''
         volume = ''
         issn = ''
-        date = datetime.now().replace(month=1)
+        date = datetime.now()
         title = journal_record['title'][0]
         publisher = journal_record['publisher']
         doi = journal_record['DOI']
