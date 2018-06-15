@@ -1,2 +1,2 @@
 # MLJournalArticles
-Create a model for predicting what Journal Articles the Voth Group should be reading
+Create a model for predicting what journal articles the Voth Group should be reading
