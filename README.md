@@ -15,6 +15,12 @@ Four steps are necessary to parse the data, add the data to the database, build 
 
 The model is biased (weighted) to give more false positives, as we expect that the number of actually relevant articles to be greater than the list of relevant articles in the database. Here, the confusion matrix shows that the model predicts almost everything perfectly, but it predicts some extra articles to be relevant, which is exactly what we wanted. 
 
-![alt text][logo]
+![alt text][conf_mat]
 
-[logo]: https://github.com/mocohen/PredictJournalArticles/blob/master/confusion_matrix.png "Confusion Matrix"
+[conf_mat]: https://github.com/mocohen/PredictJournalArticles/blob/master/confusion_matrix.png "Confusion Matrix"
+
+
+
+![alt text][norm_conf_mat]
+
+[norm_conf_mat]: https://github.com/mocohen/PredictJournalArticles/blob/master/normalized_confusion_matrix.png "Normalized Confusion Matrix"
