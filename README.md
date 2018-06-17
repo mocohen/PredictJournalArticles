@@ -1,5 +1,5 @@
 # PredictJournalArticles
-Create a model for predicting what journal articles the Voth Group should be reading
+Model for predicting relevant journal articles for the Voth Group.
 
 ## Model Details
 
